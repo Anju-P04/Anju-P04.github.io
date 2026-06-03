@@ -1,93 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Anju P | Portfolio</title>
-<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anju P | AI Researcher Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+html{scroll-behavior:smooth}
+body{background:#0b1120;color:#fff}
+nav{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;padding:18px 8%;background:rgba(11,17,32,.9);backdrop-filter:blur(8px);z-index:100}
+nav a{color:#fff;text-decoration:none;margin-left:18px}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:center;gap:60px;padding:100px 8%;flex-wrap:wrap}
+.hero img{width:300px;height:300px;border-radius:50%;object-fit:cover;border:4px solid #38bdf8;animation:slide 1.2s ease}
+@keyframes slide{from{opacity:0;transform:translateX(-100px)}to{opacity:1;transform:translateX(0)}}
+.glass{background:rgba(255,255,255,.06);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.1);border-radius:20px}
+.hero-text{max-width:650px}
+.hero h1{font-size:3rem}
+.hero p{color:#cbd5e1;margin:20px 0;line-height:1.8}
+.btn{display:inline-block;padding:12px 22px;background:#38bdf8;color:#000;text-decoration:none;border-radius:10px;font-weight:600;margin:5px}
+.section{padding:80px 8%}
+.title{text-align:center;color:#38bdf8;margin-bottom:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.card{padding:22px}
+.card:hover{transform:translateY(-6px);transition:.3s}
+.fade{opacity:0;transform:translateY(40px);transition:1s}
+.fade.show{opacity:1;transform:none}
+footer{text-align:center;padding:30px}
+</style>
 </head>
-
 <body>
+<nav>
+<h3>Anju P</h3>
+<div>
+<a href="#about">About</a>
+<a href="#research">Research</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
 
-<header>
+<section class="hero">
 <img src="profile.jpeg" alt="Anju P">
-<h1>Anju P</h1>
-<p>M.Tech Computer Science & Engineering Student</p>
-</header>
-
-<section>
-<h2>About Me</h2>
-<p>
-I am pursuing M.Tech in Computer Science & Engineering at Government Engineering College Thrissur. My interests include Artificial Intelligence, Computer Vision, Machine Learning, Cybersecurity and Research.
-</p>
+<div class="hero-text">
+<h1>ANJU P</h1>
+<h2 id="typing" style="color:#38bdf8"></h2>
+<p>Passionate about Artificial Intelligence, Computer Vision, Machine Learning and Cybersecurity. M.Tech CSE student at Government Engineering College Thrissur building research-driven solutions for real-world problems.</p>
+<a class="btn" href="resume.pdf">Resume</a>
+<a class="btn" href="https://github.com/Anju-P04">GitHub</a>
+<a class="btn" href="https://www.linkedin.com/in/anju-p-13a8aa309">LinkedIn</a>
+</div>
 </section>
 
-<section>
-<h2>Education</h2>
-
-<h3>M.Tech CSE</h3>
-<p>Government Engineering College Thrissur</p>
-
-<h3>B.Tech CSE</h3>
-<p>TOMS College of Engineering</p>
-<p>CGPA: 7.92</p>
-
+<section id="about" class="section fade">
+<h2 class="title">About Me</h2>
+<div class="glass card">
+M.Tech Computer Science & Engineering student at Government Engineering College Thrissur. B.Tech CSE graduate from TOMS College of Engineering (CGPA 7.92). Interested in AI, Deep Learning, Computer Vision and Research.
+</div>
 </section>
 
-<section>
-<h2>Skills</h2>
+<section id="research" class="section fade">
+<h2 class="title">Research Interests</h2>
+<div class="grid">
+<div class="glass card">Computer Vision</div>
+<div class="glass card">Deep Learning</div>
+<div class="glass card">Face Anti-Spoofing</div>
+<div class="glass card">Deepfake Detection</div>
+<div class="glass card">AI for Agriculture</div>
+<div class="glass card">Cybersecurity</div>
+</div>
+</section>
 
+<section class="section fade">
+<h2 class="title">Publication</h2>
+<div class="glass card">
+<h3>CyberSentinel: AI-Powered Framework for Child Protection and Digital Safety</h3>
+<p>Published in SSRN and IRJET. Focused on AI-driven threat detection and digital safety.</p>
+</div>
+</section>
+
+<section id="projects" class="section fade">
+<h2 class="title">Featured Projects</h2>
+<div class="grid">
+<div class="glass card"><h3>Cardamom Quality Grading System</h3><p>Computer Vision based grading system for cardamom quality assessment.</p></div>
+<div class="glass card"><h3>Deepfake Detection</h3><p>Deep Learning approach for detecting manipulated media.</p></div>
+<div class="glass card"><h3>Online College Management System</h3><p>HTML, CSS, PHP and MySQL based management platform.</p></div>
+</div>
+</section>
+
+<section class="section fade">
+<h2 class="title">Certifications</h2>
+<div class="glass card">
 <ul>
-<li>Python</li>
-<li>Java</li>
-<li>C++</li>
-<li>HTML</li>
-<li>CSS</li>
-<li>PHP</li>
-<li>SQL</li>
-<li>Git</li>
-<li>Machine Learning</li>
-<li>Computer Vision</li>
-<li>Cybersecurity</li>
+<li>NPTEL Internet of Things (Elite + Silver, 78%)</li>
+<li>Complete Python Bootcamp (Udemy)</li>
+<li>AI, ML, IoT and Python Workshops</li>
 </ul>
-
+</div>
 </section>
 
-<section>
-<h2>Projects</h2>
-
-<h3>Cardamom Quality Grading System Using Computer Vision</h3>
-
-<h3>Deepfake Detection</h3>
-
-<h3>CyberSentinel</h3>
-
-<h3>Online College Management System</h3>
-
-</section>
-
-<section>
-<h2>Certifications</h2>
-
-<ul>
-<li>NPTEL Internet of Things (IoT) - Elite + Silver (78%)</li>
-<li>Complete Python Bootcamp - Udemy</li>
-</ul>
-
-</section>
-
-<section>
-<h2>Contact</h2>
-
+<section id="contact" class="section fade">
+<h2 class="title">Contact</h2>
+<div class="glass card">
 <p>Email: anjuzanjuzz19@gmail.com</p>
 <p>Phone: 9207410480</p>
 <p>Location: Kumily, Idukki, Kerala</p>
-
+</div>
 </section>
 
-<footer>
-<p>© 2026 Anju P</p>
-</footer>
+<footer>© 2026 Anju P | Aspiring AI Researcher</footer>
 
+<script>
+const text="Aspiring AI Researcher | Computer Vision & Deep Learning | M.Tech CSE";
+let i=0;
+function type(){if(i<text.length){document.getElementById('typing').innerHTML+=text.charAt(i);i++;setTimeout(type,40);}}
+type();
+const obs=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show');});});
+document.querySelectorAll('.fade').forEach(el=>obs.observe(el));
+</script>
 </body>
 </html>
